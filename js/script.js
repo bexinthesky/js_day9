@@ -27,7 +27,5 @@ function User(firstname, lastname, username) {
 // new user object created using user constructor, console.log to debug; append new user info to html page, console.log to debug
 var newUser = new User("Luna", "Lovegood", "looney-lovegood");
 console.log(newUser.userInfo());
-document.getElementById('new-user').append(newUser);
+document.getElementById('new-user').append(newUser.userInfo());
 console.log(newUser);
-// var text;
-// text.innerText = newUser;
