@@ -24,8 +24,7 @@ function User(firstname, lastname, username) {
   };
 }
 
-// new user object created using user constructor, console.log to debug; append new user info to html page, console.log to debug
+// new user object created using user constructor, console.log to debug; append new user info to html page, console.log to debug, appended newUser to html through getElementById and adding the .userInfo() function to append(newUser)
 var newUser = new User("Luna", "Lovegood", "looney-lovegood");
 console.log(newUser.userInfo());
 document.getElementById('new-user').append(newUser.userInfo());
-console.log(newUser);
