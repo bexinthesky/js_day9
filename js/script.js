@@ -3,7 +3,9 @@ $("button").click(function(){
     $("form").removeClass("hidden");
 });
 
-// use getElementById and addEventListener when user clicks ‘submit’ on form, create function(e) to use .preventDefault() and then create variables that extract content from first three <input> elements by using getElementById('idname').value, and use console.log to display content extracted
+// use getElementById and addEventListener when user clicks ‘submit’ on form to create function(e) to use .preventDefault()
+//then create variables that extract content from first three <input> elements by using getElementById('idname').value
+//use console.log to display content extracted
 document.getElementById('submit-button').addEventListener('click', function(e) {
 	e.preventDefault();
     var firstName = document.getElementById('first-name').value;
@@ -24,7 +26,9 @@ function User(firstname, lastname, username) {
   };
 }
 
-// new user object created using user constructor, console.log to debug; append new user info to html page, console.log to debug, appended newUser to html through getElementById and adding the .userInfo() function to append(newUser)
+// new user object created using user constructor, console.log to debug; append new user info to html page
+//console.log to debug
+//appended newUser info to html through getElementById and adding the .userInfo()function to append(newUser)
 var newUser = new User("Luna", "Lovegood", "looney-lovegood");
 console.log(newUser.userInfo());
 document.getElementById('new-user').append(newUser.userInfo());
